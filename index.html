@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Enlaces a los archivos CSS generados por el script -->
-    <link rel="stylesheet" href="css/style-768px.css" media="(max-width: 768px)">
-    <link rel="stylesheet" href="css/style-1024px.css" media="(max-width: 1024px)">
-    <link rel="stylesheet" href="css/style-1920px.css" media="(max-width: 1920px)">
-    <!-- Enlaces a los archivos JavaScript generados por el script -->
-    <script src="js/main.js"></script>
-    <script src="js/functions.js"></script>
-    <script src="js/animations.js"></script>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Enlaces a los archivos CSS generados por el script -->
+        <link rel="stylesheet" href="css/style-768px.css"
+            media="(max-width: 768px)">
+        <link rel="stylesheet" href="css/style-1024px.css"
+            media="(max-width: 1024px)">
+        <link rel="stylesheet" href="css/style-1920px.css"
+            media="(max-width: 1920px)">
+        <!-- Enlace al CDN de Vue.js 3 -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/vue@3.2.6/dist/vue.global.min.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h1 id="message">{{ message }}</h1>
+        </div>
+        <!-- <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    message: "¡Hola Mundo con Vue.js!"
+                }
+            }
+        })
+        app.mount("#app")
+    </script> -->
+        <!-- Enlaces a los archivos JavaScript generados por el script -->
+        <script src="js/main.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/animations.js"></script>
+        <!-- Agrega tu archivo app.js aquí -->
+        <script src="vue3-js/app.js"></script>
+
+    </body>
 </html>

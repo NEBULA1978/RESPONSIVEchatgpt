@@ -13,11 +13,29 @@ html_content="
     <title>Mi Página Web</title>
     <style>
         /* Estilos CSS para la clase .gallery */
+
+        /* Establece la visualización de los elementos como una cuadrícula */
         .gallery {
             display: grid;
+
+            /* Establece el espacio entre las celdas de la cuadrícula */
             gap: 1rem;
+
+            /* Establece la altura predeterminada de las filas en la cuadrícula */
             grid-auto-rows: 22rem;
+
+            /* Configura la cantidad de columnas y su tamaño en función del espacio disponible */
+            /* Auto-fill llenará el espacio de columnas incluso si solo hay una fila */
+            /* Minmax establece un tamaño mínimo (15rem) y un tamaño máximo (1fr, que es una fracción del espacio disponible) para las columnas */
             grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+
+            /* Otras opciones que podrías considerar:
+
+            /* Expandir las columnas para que llenen todas las filas */
+            /* grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); */
+
+            /* Expandir las columnas para que llenen todas las filas, con un tamaño mínimo y máximo */
+            /* grid-template-columns: repeat(auto-fit, minmax(15rem, 25rem)); */
         }
 
         /* Estilos CSS para la clase .featured */

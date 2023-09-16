@@ -10,3 +10,12 @@
   .featured {
       grid-column: span 2;
   }
+
+  /* en la primera línea,
+  se menciona "llenar el espacio de columnas pero aunque sean una fila",
+  lo cual no es completamente preciso. auto-fill llenará el espacio de columnas incluso si solo hay una fila disponible,
+  pero no generará columnas adicionales si no hay contenido para llenarlas. auto-fit,
+  por otro lado,
+  generará columnas adicionales solo si hay contenido para llenarlas. El comentario que menciona "al mínimo al 100% y al máximo se hace más pequeño" es correcto en el contexto de minmax,
+  ya que minmax(15rem, 1fr) significa que el tamaño de la columna se ajustará automáticamente entre un mínimo de 15rem y un máximo del 100% del espacio disponible. El comentario sobre "expande las columnas para que llenen todas las filas" es correcto y describe el comportamiento de auto-fit,
+  que expandirá las columnas según sea necesario para llenar todas las filas disponibles. */

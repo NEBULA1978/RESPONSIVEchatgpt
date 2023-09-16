@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Nombre del archivo HTML
-archivo_html="mi_pagina-sinnmedia.html"
+archivo_html="mi_pagina-sinmedia.html"
 
 # Contenido del archivo HTML
 html_content="
@@ -11,7 +11,20 @@ html_content="
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Mi Página Web</title>
-    <link rel='stylesheet' href='estilos.css'>
+    <style>
+        /* Estilos CSS para la clase .gallery */
+        .gallery {
+            display: grid;
+            gap: 1rem;
+            grid-auto-rows: 22rem;
+            grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        }
+
+        /* Estilos CSS para la clase .featured */
+        .featured {
+            grid-column: span 2;
+        }
+    </style>
 </head>
 <body>
     <header class='mi-header'>
@@ -54,7 +67,7 @@ html_content="
     </main>
 
     <footer class='mi-footer'>
-        <p>&copy; $(date +'%Y') Mi Página Web. Todos los derechos reservados.</p>
+        <p>&copy; 2023 Mi Página Web. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

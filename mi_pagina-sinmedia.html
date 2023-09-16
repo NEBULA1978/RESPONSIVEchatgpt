@@ -5,7 +5,20 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Mi Página Web</title>
-    <link rel='stylesheet' href='estilos.css'>
+    <style>
+        /* Estilos CSS para la clase .gallery */
+        .gallery {
+            display: grid;
+            gap: 1rem;
+            grid-auto-rows: 22rem;
+            grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        }
+
+        /* Estilos CSS para la clase .featured */
+        .featured {
+            grid-column: span 2;
+        }
+    </style>
 </head>
 <body>
     <header class='mi-header'>
